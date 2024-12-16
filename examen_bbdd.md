@@ -19,15 +19,15 @@ Puedes utilizar `curl` o `Python` para realizar las peticiones. Deberás entrega
 
 Haz una llamada `GET` a la ruta `/`, la `bandera` estará en la respuesta.
 
-## Ejercicio 2: Métodos
+## Ejercicio 2: Método
 
-Para obtener la `bandera` empieza por hacer una petición `GET` a la ruta `/metodos`.
+Para obtener la `bandera` empieza por hacer una petición `GET` a la ruta `/metodo`.
 
 ## Ejercicio 3: Enviando datos
 
 El endpoint que usarás para este ejercicio es `/enviar_datos`
 
-Para obtener la `bandera` tendrás que enviar una petición `POST` a la ruta `/shared_data` enviando **CUALQUIER** dato en la petición, ya sea en el `body` o en la propia `URL` adjuntandolos como una `query`.
+Para obtener **las banderas** tendrás que enviar una petición `POST` a la ruta `/shared_data` enviando **CUALQUIER** dato en la petición, ya sea en el `body` o en la propia `URL` adjuntandolos como una `query`.
 
 ## Ejercicio 4: Usuarios
 
@@ -45,6 +45,8 @@ Por último, haz una petición `POST` a la ruta `/login` con los datos del usuar
     "password": "contrasena"
 }
 ```
+
+La bandera está detrás del login.
 
 ## Ejercicio 5: Alquimia
 

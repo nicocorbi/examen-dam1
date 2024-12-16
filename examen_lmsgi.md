@@ -9,6 +9,10 @@ Correo:
 
 Este examen se centra en los aspectos más basicos de HTML, CSS y JavaScript, poniendo el foco en la manipulación del DOM.
 
+Haz un `fork` de este repositorio. Esta copia será tu examen, trabaja sobre ella.
+
+En el examen busca hacer un código sencillo, usando las herramientas que hemos visto en clase. Está bien usar IA, pero aseguraos de que el código sea lo mas *autoexplicativo* que podais.
+
 ## Proyecto 1
 
 Partiendo de esto:
@@ -31,8 +35,8 @@ Partiendo de esto:
 
 Añade el código necesario para que:
 
-1. Al pulsar el boton `+`, el marcador se incrementará en 1.
-2. Al pulsar el boton `-`, el marcador se decrementará en 1.
+1. Al pulsar el boton `+`, el marcador se incremente en 1.
+2. Al pulsar el boton `-`, el marcador se decremente en 1.
 3. El marcador no puede ser menor de 0.
 4. El marcador no puede ser mayor de 10.
 5. Si el marcador es menor de 5, el color será verde.
@@ -61,7 +65,6 @@ Partiendo de esto:
 ```
 
 Añade el código necesario para que:
-
 1. Se muestre el valor de cada `range` en el `p` correspondiente.
 2. Se muestren todos los resultados de los operadores aritméticos básicos entre los dos valores de los `range`.
 
@@ -212,3 +215,8 @@ const diccionario = [
 Añade el código necesario para que:
 
 - Se muestre una lista con todas las palabras del diccionario y su significado en una lista.
+- [EXTRA!] Consigue controlar el alto y ancho de la lista de palabras para que el ancho ocupe el 100% del ancho de la pantalla y el alto el 25% del alto de la pantalla.
+
+## Proyecto 4
+
+Haz **lo que quieras** creando un proyecto en p5 localmente, sorpréndeme :)

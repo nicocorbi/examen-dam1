@@ -1,4 +1,5 @@
 1. ¿Que diferencia una variable creada con `let` de una creada con `const`?
+2. ¿Qué es un dato primitivo? ¿y un objeto?
 2. ¿Qué diferencia hay entre `==` y `===`?
 3. Analiza el siguiente código, ¿qué valor se mostrará en la consola?
 ```js
@@ -20,3 +21,8 @@ function saluda() {
 }
 boton.addEventListener('click', saluda());
 ```
+6. ¿Que formas de seleccionar elementos del DOM conoces? ¿Cuál es la diferencia entre ellas?
+7. ¿Qué es un evento? ¿Qué formas conoces de crearlos?
+8. ¿Como se añade una libreria externa a un proyecto de JavaScript? Puedes usar p5 como referencia.
+9. ¿Que es esto? `<meta charset="UTF-8">` ¿Por qué es importante?
+10. ¿Que es una función? Explica brevemente su sintaxis en el lenguaje que prefieras.
