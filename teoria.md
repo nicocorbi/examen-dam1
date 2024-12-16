@@ -1,3 +1,15 @@
+# Teoria
+
+Realiza el examen directamente sobre el archivo!
+
+Este examen solo muestra algunos conceptos al azar que me parecen importantes, hay muchos!
+
+Intenta añadir código cuando lo necesites utilizando
+
+```lenguaje
+codigo
+```
+
 1. ¿Que diferencia una variable creada con `let` de una creada con `const`?
 2. ¿Qué es un dato primitivo? ¿y un objeto?
 2. ¿Qué diferencia hay entre `==` y `===`?
