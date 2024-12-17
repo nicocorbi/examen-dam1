@@ -6,9 +6,47 @@
     <title>P2</title>
 </head>
 <body>
-    <p></p>
-    <input type="range" min="0" max="100">
-    <p></p>
-    <input type="range" min="0" max="100">    
+    <p id="valor1">Valor del primer range: 0</p>
+    <input type="range" min="0" max="100" id="range1" value="0">
+    <p id="resultados1"></p>  
+    <p id="valor2">Valor del segundo range: 0</p>
+    <input type="range" min="0" max="100" id="range2" value="0">
+    <p id="resultados2"></p>  
+    <script>
+        const range1 = document.getElementById('range1');
+        const range2 = document.getElementById('range2');
+        const valor1 = document.getElementById('valor1');
+        const valor2 = document.getElementById('valor2');
+        const resultados1 = document.getElementById('resultados1');
+        const resultados2 = document.getElementById('resultados2');
+
+        // Función para actualizar los valores y resultados
+        function actualizarValores() {
+            // Obtener los valores de los rangos y convertirlos a números con el operador "+"
+            const valorRange1 = +range1.value; // Usando el operador "+" para convertir la cadena a número
+            const valorRange2 = +range2.value; // Usando el operador "+" para convertir la cadena a número
+
+            // Mostrar los valores en los <p> correspondientes
+            valor1.textContent = `Valor del primer range: ${valorRange1}`;
+            valor2.textContent = `Valor del segundo range: ${valorRange2}`;
+
+            // Calcular los resultados de los operadores aritméticos
+            const suma = valorRange1 + valorRange2;
+            const resta = valorRange1 - valorRange2;
+            const multiplicacion = valorRange1 * valorRange2;
+            const division = valorRange1 / valorRange2 
+
+            // Mostrar los resultados de las operaciones en los <p> correspondientes
+            resultados1.textContent = `Suma: ${suma}, Resta: ${resta}, Multiplicación: ${multiplicacion}, División: ${division}`;
+            resultados2.textContent = `Suma: ${suma}, Resta: ${resta}, Multiplicación: ${multiplicacion}, División: ${division}`;
+        }
+
+        // Añadir eventos para cuando cambian los valores de los ranges
+        range1.addEventListener('input', actualizarValores);
+        range2.addEventListener('input', actualizarValores);
+
+        
+        actualizarValores();
+    </script>
 </body>
 </html>

@@ -4,10 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P1</title>
+    <style>
+        
+
+        /* Colores por rango de contador */
+        .verde {
+            color: green;
+        }
+        
+        .amarillo {
+            color: yellow;
+        }
+
+        .rojo {
+            color: red;
+        }
+    </style>
 </head>
 <body>
-    <p></p>
-    <button>+</button>
-    <button>-</button>
+    <p id="contador">0</p>
+    <button id="incrementar">+</button>
+    <button id="decrementar">-</button>
+
+    <script>
+        // Inicializamos el contador en 0
+        let contador = 0;
+
+        // Función para actualizar el valor en el HTML y cambiar el color
+        function actualizarContador() {
+            // Actualizamos el texto del contador
+            document.getElementById("contador").textContent = contador;
+
+            // Eliminamos cualquier clase de color anterior
+            document.getElementById("contador").classList.remove("verde", "amarillo", "rojo");
+
+            // Cambiamos el color según el valor del contador
+            if (contador < 5) {
+                document.getElementById("contador").classList.add("verde");
+            } else if (contador >= 5 && contador <= 7) {
+                document.getElementById("contador").classList.add("amarillo");
+            } else {
+                document.getElementById("contador").classList.add("rojo");
+            }
+        }
+
+        // Event listener para el botón "+"
+        document.getElementById("incrementar").addEventListener("click", function() {
+            if (contador < 10) {  // Solo incrementa si es menor que 10
+                contador++;  // Incrementamos el contador
+                actualizarContador();  // Actualizamos el marcador en la página
+            }
+        });
+
+        // Event listener para el botón "-"
+        document.getElementById("decrementar").addEventListener("click", function() {
+            if (contador > 0) {  // Solo decrementa si es mayor que 0
+                contador--;  // Decrementamos el contador
+                actualizarContador();  // Actualizamos el marcador en la página
+            }
+        });
+    </script>
 </body>
 </html>

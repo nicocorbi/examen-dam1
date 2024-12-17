@@ -6,6 +6,9 @@
     <title>P3</title>
 </head>
 <body>
+    <h1>Diccionario de Toki Pona</h1>
+    <ul id="diccionario-list"></ul>
+
     <script>
 const diccionario = [
     { toki: "a", es: "ah, sí, emoción" },
@@ -132,6 +135,13 @@ const diccionario = [
     { toki: "weka", es: "lejos, ausente, eliminar" },
     { toki: "wile", es: "querer, necesitar, deber" }
 ];
-    </script>
+const lista = document.getElementById('diccionario-list');
+
+diccionario.forEach(item => {
+    const li = document.createElement('li');
+    li.textContent = `${item.toki}: ${item.es}`;
+    lista.appendChild(li);
+});
+</script>
 </body>
 </html>

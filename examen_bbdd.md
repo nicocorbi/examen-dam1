@@ -2,8 +2,8 @@
 
 ## Alumno
 
-Nombre:
-Correo:
+IP: 192.168.60.211
+
 
 ## Instrucciones
 
@@ -18,17 +18,20 @@ Puedes utilizar `curl` o `Python` para realizar las peticiones. Deberás entrega
 ## Ejercicio 1: Hola mundo
 
 Haz una llamada `GET` a la ruta `/`, la `bandera` estará en la respuesta.
+{3LR3570N03574NF4C1L}
 
 ## Ejercicio 2: Método
 
 Para obtener la `bandera` empieza por hacer una petición `GET` a la ruta `/metodo`.
+https://developer.mozilla.org/es/docs/Web/HTTP/Methods/PATCHlab@dam-1-lab:~$
+{patchwork}
 
 ## Ejercicio 3: Enviando datos
 
 El endpoint que usarás para este ejercicio es `/enviar_datos`
 
 Para obtener **las banderas** tendrás que enviar una petición `POST` a la ruta `/shared_data` enviando **CUALQUIER** dato en la petición, ya sea en el `body` o en la propia `URL` adjuntandolos como una `query`.
-
+{n1c3j0b!}
 ## Ejercicio 4: Usuarios
 
 Este endpoint consiste en hacer un login con un usuario.
@@ -36,13 +39,18 @@ Este endpoint consiste en hacer un login con un usuario.
 Primero, obten los datos de los usuarios haciendo una petición `GET` a la ruta `/usuarios`.
 
 Busca el usuario con el nombre `hiddenoter` y usar su `id` para hacer una petición `GET` a la ruta `/usuarios/{id}` y obtener su contraseña.
+APIKEY:G37BU5Y
+id=6
+CONTRASEÑA: otter123
 
 Por último, haz una petición `POST` a la ruta `/login` con los datos del usuario obtenidos anteriormente. Envialos en el siguiente formato:
+cr3d3nc14l3s
+
 
 ```json
 {
-    "name": "nombre",
-    "password": "contrasena"
+    "name": "hiddenoter",
+    "password": "otter123"
 }
 ```
 
